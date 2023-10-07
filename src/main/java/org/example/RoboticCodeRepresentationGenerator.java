@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * mapOfLeaves is used for quick access to a given leaf based on the label.
  *
  * It's not clear if among 2 smallest elements, if the smaller comes after the larger, I should preserve the order
- * or should I swap them. I assume I should swap (sort)
+ * or should I sort them (and ascending or descending). I assume I should sort (asc)
  */
 public class RoboticCodeRepresentationGenerator {
     private TreeMap<String, Node> mapOfLeaves = new TreeMap<>();
