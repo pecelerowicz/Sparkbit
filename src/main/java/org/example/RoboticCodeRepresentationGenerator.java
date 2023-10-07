@@ -27,9 +27,6 @@ public class RoboticCodeRepresentationGenerator {
                 .collect(Collectors.toCollection(ArrayList::new));
         nodes.forEach(n -> mapOfLeaves.put(n.getLabel(), n));  // held just for quick access
         while(nodes.size() > 1) {
-//            nodes.sort(Node::compareTo);
-//            Node left = nodes.remove(0);
-//            Node right = nodes.remove(0);
             Node left = removeAndReturnSmallestNode(nodes);
             Node right = removeAndReturnSmallestNode(nodes);
             Node combined = new Node(left, right);
